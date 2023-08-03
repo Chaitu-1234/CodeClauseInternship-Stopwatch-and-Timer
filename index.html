@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer and Stopwatch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card timer-card">
+        <h2>Timer</h2>
+        <div class="timer-display" id="timerDisplay">00:00:00</div>
+        <div class="timer-controls">
+          <div class="inputs">
+            <input
+              type="number"
+              id="hoursInput"
+              min="0"
+              max="23"
+              placeholder="HH"
+            />
+
+            <input
+              type="number"
+              id="minutesInput"
+              min="0"
+              max="59"
+              placeholder="MM"
+            />
+            <input
+              type="number"
+              id="secondsInput"
+              min="0"
+              max="59"
+              placeholder="SS"
+            />
+            <br />
+            <br />
+          </div>
+          <button class="start-btn" id="startTimer">Start</button>
+          <button class="pause-btn" id="pauseTimer">Pause</button>
+          <button class="reset-btn" id="resetTimer">Reset</button>
+        </div>
+      </div>
+      <div class="card stopwatch-card" id="stopwatch-card">
+        <h2>Stopwatch</h2>
+        <div class="stopwatch-display" id="stopwatchDisplay">00:00:00</div>
+        <div class="stopwatch-controls">
+          <button class="start-btn" id="startStopwatch">Start</button>
+          <button class="pause-btn" id="pauseStopwatch">Pause</button>
+          <button class="reset-btn" id="resetStopwatch">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
